@@ -8,7 +8,7 @@ export const heroOne = {
 	description: '',
 	buttonLabel: 'Find More',
 	imgStart: 'start',
-	img: './assets/CindyDerp.png',
+	img: './assets/MalyTran.jpg',
 	start: 'true',
 };
 
@@ -22,7 +22,7 @@ export const heroTwo = {
 	description: 'Our clients have had the best experience working with us',
 	buttonLabel: 'View Au Nhi',
 
-	linkTo: '/more',
+	linkTo: '/pricing',
 	imgStart: 'start',
 	img: './assets/AuNhi.png',
 	start: 'true',

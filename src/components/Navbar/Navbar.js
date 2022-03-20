@@ -12,13 +12,13 @@ import {
 	NavLinks,
 	NavItem,
 } from './NavbarStyles.js';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import { data } from '../../data/NavbarData';
 
 const Navbar = () => {
 	const [show, setShow] = useState(false);
 
-	let history = useNavigate();
+	let history = useHistory();
 	let location = useLocation();
 
 	const handleClick = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
 				<NavbarContainer>
 					<NavLogo to="/">
 						<NavIcon src="./assets/DMU LOGO.png" alt="logo" />
-						Đoàn Đaminh Úy
+						Delta
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes /> : <CgMenuRight />}

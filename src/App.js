@@ -1,25 +1,27 @@
-import GlobalStyle from './globalStyles';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import React from 'react';
-
-//pages
-import Home from './pages/Home';
-import SignupPage from './pages/SignupPage';
-import PricingPage from './pages/PricingPage';
+import GlobalStyle from './globalStyles';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 
+//Pages
+import Home from './pages/Home';
+import SignUp from './pages/SignupPage';
+import Pricing from './pages/PricingPage';
+import Footer from './components/Footer/Footer';
+
 function App() {
-  return (
-    <Router>
-      <GlobalStyle />
-      <Navbar />
-      <Routes>
-        <Route path='/' exact element={<Home/>}/>
-        <Route path='/signup' exact element={<SignupPage/>}/>
-        <Route path='/pricing' exact element={<PricingPage/>}/>
-      </Routes>
-    </Router>
-  );
+	return (
+		<Router>
+			<GlobalStyle />
+			<Navbar />
+			<Switch>
+				<Route path="/" exact component={Home} />
+				<Route path="/signup" exact component={SignUp} />
+				<Route path="/pricing" exact component={Pricing} />
+			</Switch>
+			<Footer />
+		</Router>
+	);
 }
 
 export default App;
