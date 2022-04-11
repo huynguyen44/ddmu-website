@@ -48,7 +48,7 @@ const Navbar = () => {
 				<NavbarContainer>
 					<NavLogo to="/">
 						<NavIcon src="./assets/DMU LOGO.png" alt="logo" />
-						Delta
+						Đoàn Đaminh Úy
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes /> : <CgMenuRight />}

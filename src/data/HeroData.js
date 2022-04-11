@@ -4,7 +4,7 @@ export const heroOne = {
 	topLine: {
 		text: 'Founded in 2012 by Tr. Amalia Hoang Tran',
 	},
-	headline: "Cindy Derp **change later**",
+	headline: "",
 	description: '',
 	buttonLabel: 'Find More',
 	imgStart: 'start',

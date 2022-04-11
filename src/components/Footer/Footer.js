@@ -23,17 +23,17 @@ function Footer() {
 					<FooterColumn id="footerLogo">
 						<FooterLogo to="/">
 							<SocialIcon src="./assets/DMU LOGO.png" />
-							Delta
+							Đoàn Đaminh Úy
 						</FooterLogo>
 						<FooterAddress>
-							69 Street, Delta Building, US Road, Los Angeles 123
+							14603 Santa Gertrudis, San Antonio, TX 78217
 						</FooterAddress>
 
 						<Row align="center" margin="auto  0 0 0" gap="1rem">
 							{footerSocialData.map((social, index) => (
 								<FooterSocialIcon
 									key={index}
-									href="/"
+									href={social.linkto}
 									target="_blank"
 									aria-label={social.name}
 								>

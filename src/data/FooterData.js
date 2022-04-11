@@ -7,22 +7,16 @@ export const footerSocialData = [
 	{
 		name: 'Facebook',
 		icon: iconStyle(FaFacebook),
+		linkto: 'https://www.facebook.com/%C4%90o%C3%A0n-TNTT-%C4%90aminh-%C3%9Ay-San-Antonio-TX-105275268569856'
 	},
 	{
 		name: 'Instagram',
 		icon: iconStyle(FaInstagram),
+		linkto: 'https://www.instagram.com/tnttdmu/'
 	},
 	{
 		name: 'YouTube',
 		icon: iconStyle(FaYoutube),
-	},
-	{
-		name: 'Twitter',
-		icon: iconStyle(FaTwitter),
-	},
-	{
-		name: 'LinkedIn',
-		icon: iconStyle(FaLinkedin),
 	},
 ];
 
